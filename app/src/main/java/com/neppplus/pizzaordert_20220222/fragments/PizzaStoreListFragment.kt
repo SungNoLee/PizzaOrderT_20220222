@@ -36,6 +36,8 @@ class PizzaStoreListFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        setupEvent()
+        setValues()
     }
 
     fun setupEvent() {
@@ -52,6 +54,7 @@ class PizzaStoreListFragment : Fragment() {
 
         pizzaStoreListView.adapter = mPizzaStoreAdapter
     }
+
     companion object {
         /**
          * Use this factory method to create a new instance of
