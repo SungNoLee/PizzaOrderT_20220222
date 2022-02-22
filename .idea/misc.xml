@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/kotlin/src/PizzaOrderT_20220222/app/src/main/res/layout/activity_main.xml" value="0.3206672845227062" />
         <entry key="..\:/kotlin/src/PizzaOrderT_20220222/app/src/main/res/layout/fragment_my_profile.xml" value="0.3515625" />
         <entry key="..\:/kotlin/src/PizzaOrderT_20220222/app/src/main/res/layout/fragment_pizza_store_list.xml" value="0.3515625" />
       </map>
