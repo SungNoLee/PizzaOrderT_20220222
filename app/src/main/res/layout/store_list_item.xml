@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:padding="15dp">
@@ -23,6 +24,15 @@
             android:text="가게 이름 자리"
             android:textSize="17sp"
             android:textColor="@color/black"/>
+
+        <com.willy.ratingbar.ScaleRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srb_rating="2"
+            app:srb_starWidth="20dp"
+            app:srb_starHeight="20dp"
+            app:srb_starPadding="2dp"
+            />
 
     </LinearLayout>
 
