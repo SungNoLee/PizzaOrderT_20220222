@@ -3,6 +3,7 @@
     package="com.neppplus.pizzaordert_20220222">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PizzaOrderT_20220222"
         android:usesCleartextTraffic="true">
+        <activity
+            android:name=".EditNicknameActivity"
+            android:exported="false" />
         <activity
             android:name=".ViewStoreDetailActivity"
             android:exported="false" />
