@@ -9,6 +9,7 @@
 
 
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgLogo"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@mipmap/ic_launcher"/>
@@ -19,6 +20,7 @@
         android:layout_marginStart="10dp"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/txtStoreName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="가게 이름 자리"
@@ -26,9 +28,12 @@
             android:textColor="@color/black"/>
 
         <com.willy.ratingbar.ScaleRatingBar
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srb_rating="2"
+            app:srb_isIndicator="true"
+            app:srb_stepSize="0.5"
             app:srb_starWidth="20dp"
             app:srb_starHeight="20dp"
             app:srb_starPadding="2dp"
