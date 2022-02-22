@@ -10,7 +10,7 @@ import com.neppplus.pizzaordert_20220222.datas.StoreData
 
 class StoreAdapter(
     val mContext: Context,
-    val resId: Int,
+    resId: Int,
     val mList: ArrayList<StoreData>
 ) : ArrayAdapter<StoreData>(mContext, resId, mList) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
