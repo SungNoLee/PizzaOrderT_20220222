@@ -1,5 +1,6 @@
 package com.neppplus.pizzaordert_20220222.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Adapter
 import com.neppplus.pizzaordert_20220222.R
+import com.neppplus.pizzaordert_20220222.ViewStoreDetailActivity
 import com.neppplus.pizzaordert_20220222.adapters.StoreAdapter
 import com.neppplus.pizzaordert_20220222.datas.StoreData
 import kotlinx.android.synthetic.main.fragment_pizza_store_list.*
@@ -36,11 +38,16 @@ class PizzaStoreListFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        setupEvent()
+        setupEvents()
         setValues()
     }
 
-    fun setupEvent() {
+    fun setupEvents() {
+        pizzaStoreListView.setOnItemClickListener { adapterView, view, position, l ->
+            val myIntent = Intent(requireContext(), ViewStoreDetailActivity::class.java)
+            myIntent.putExtra("store", clickedStore)
+            startActivity(myIntent)
+        }
 
     }
 
