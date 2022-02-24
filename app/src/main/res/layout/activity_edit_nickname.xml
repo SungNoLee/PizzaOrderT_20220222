@@ -13,14 +13,15 @@
         android:text="닉네임" />
 
     <EditText
+        android:id="@+id/editNickname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="닉네임 자유 입력"
-        android:singleLine="" />
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:text="저장하기"/>
 </LinearLayout>

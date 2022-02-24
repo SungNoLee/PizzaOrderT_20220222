@@ -22,6 +22,8 @@ private const val ARG_PARAM2 = "param2"
  */
 class MyProfileFormat : Fragment() {
 
+    val REQ_CODE_NICKNAME = 2000
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,7 +32,16 @@ class MyProfileFormat : Fragment() {
         return inflater.inflate(R.layout.fragment_pizza_store_list, container, false)
     }
 
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        setupEvents()
+        setValues()
+    }
     fun setupEvents() {
+
+    }
+
+    fun setValues() {
 
     }
 
@@ -39,7 +50,7 @@ class MyProfileFormat : Fragment() {
 
         if (requestCode == REQ_CODE_NICKNAME) {
             if (resultCode == Activity.RESULT_OK) {
-                val nickname = data!!.getShortExtra("nick")
+                val nickname = data!!.getStringExtra("nick",)
                 txtNickname.text = nickname
             }
         }
