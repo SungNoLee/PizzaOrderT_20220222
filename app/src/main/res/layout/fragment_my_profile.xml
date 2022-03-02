@@ -20,7 +20,19 @@
             android:id="@+id/txtNickname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ckj"/>
+            android:text="ckj"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnEditNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임 변경"/>
 
     </LinearLayout>
 </LinearLayout>
