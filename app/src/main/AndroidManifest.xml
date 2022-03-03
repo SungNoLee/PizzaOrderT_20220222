@@ -14,10 +14,10 @@
         android:theme="@style/Theme.PizzaOrderT_20220222"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".EditNicknameActivity"
+            android:name=".ViewStoreDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewStoreDetailActivity"
+            android:name=".EditNicknameActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
